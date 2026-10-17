@@ -14,7 +14,7 @@ import { useParallax } from './hooks/useParallax.js';
 import { useScrollLock } from './hooks/useScrollLock.js';
 
 export default function App() {
-  const [loaded, setLoaded] = useState(false);
+  const [loaded, setLoaded] = useState(true);
   useScrollLock(!loaded);
   useParallax(loaded);
 
